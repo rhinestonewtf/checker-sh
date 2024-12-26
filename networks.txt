@@ -1,0 +1,2 @@
+Sepolia=https://sepolia.drpc.org
+BaseSepolia=https://sepolia.base.org
