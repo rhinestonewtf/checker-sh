@@ -20,3 +20,4 @@ Sonic=https://sonic-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}
 # SonicBlaze=https://sonic-blaze.g.alchemy.com/v2/${ALCHEMY_API_KEY}
 Fuse=https://rpc.fuse.io
 FuseSpark=https://rpc.fusespark.io
+OdysseyTestnet=https://odyssey.ithaca.xyz
