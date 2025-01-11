@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Store arguments in arrays
 networks=()
 modules=()
@@ -56,6 +58,6 @@ while IFS='=' read -r network url; do
             printf '%s\n' "$module ✓" >&2
         fi
 
-    done < modules.txt
+    done < <(curl -s https://raw.githubusercontent.com/rhinestonewtf/constants/refs/heads/main/modules.txt)
+done < <(curl -s https://raw.githubusercontent.com/rhinestonewtf/constants/refs/heads/main/networks.txt)
 
-done < networks.txt

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Store networks in array if provided, otherwise leave empty
 networks=("$@")
 
@@ -13,4 +15,5 @@ while IFS='=' read -r network url; do
     formatted_balance=$(echo "$balance" | cast from-wei)
     printf "$network: $formatted_balance \n" 
 
-done < networks.txt
+done < <(curl -s https://raw.githubusercontent.com/rhinestonewtf/constants/refs/heads/main/networks.txt)
+
